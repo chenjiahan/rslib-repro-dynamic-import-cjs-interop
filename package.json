@@ -1,0 +1,20 @@
+{
+  "name": "rslib-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:tsup": "tsup && node dist/index.js && node ./dist/index.cjs",
+    "test:rslib": "rslib build && node dist/index.js && node ./dist/index.cjs",
+    "test:modern": "modern build && node dist/index.js && node ./dist/index.cjs"
+  },
+  "devDependencies": {
+    "@modern-js/module-tools": "^2.60.3",
+    "@rslib/core": "^0.0.11",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "tsconfig-paths-webpack-plugin": "^4.1.0"
+  }
+}
